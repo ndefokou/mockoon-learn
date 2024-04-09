@@ -10,11 +10,12 @@ Setup:
 Create React App:
 
 bash
--npx create-react-app my-react-app --template typescript
--cd my-react-app
+-npx create-react-app my-react-app --template typescript,
+-cd my-react-app,
 -Install Mockoon:
 
 Download and install Mockoon from the official website based on your operating system.
+
 
 Create Mock APIs:
 
@@ -28,6 +29,7 @@ bash
 npm start
 This will start the React development server, usually accessible at http://localhost:3000.
 
+
 Project Structure:
 
 The React project typically follows this structure:
@@ -36,9 +38,12 @@ src/: Contains the application source code.
 App.tsx: Main application component.
 and Other components.
 Additional TypeScript files (types, utilities).
+
+
 Mocking API Data:
 
 You can use Mockoon to define your mock API response data. This can be static JSON data or dynamic responses based on your needs.
+
 
 Fetching Data in React:
 
@@ -47,6 +52,7 @@ Use the fetchAPI  to make requests to your mock API endpoints.
 Example: ProductList Component:
 
 The ProductListcomponent demonstrates fetching product data from the mock API and displaying it in a list:
+
 
 TypeScript
 // src/App.tsx
@@ -68,7 +74,6 @@ const ProductList: React.FC = () => {
       .catch(error => console.error('Error fetching products:', error));
   }, [products]);
   
-
   return (
     <div>
       <h1>Products</h1>
@@ -89,6 +94,7 @@ This component defines an interface for Producttype and fetches data from the /a
 Using the Component:
 
 Import the ProductListcomponent into your App.tsx and render it within the application.
+
 
 mockoon code:
 {
