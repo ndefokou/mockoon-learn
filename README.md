@@ -1,41 +1,41 @@
 
-##React TypeScript Mock API Project
-This project demonstrates a simple React application built with TypeScript that retrieves data from a mock API created in Mockoon.
+**```React TypeScript Mock API Project```**
+- This project demonstrates a simple React application built with TypeScript that retrieves data from a mock API created in Mockoon.
 
-##Prerequisites:
+**```Prerequisites:```**
 
-1-Node.js and npm (or yarn) installed on your system.
-##Setup:
+- Node.js and npm (or yarn) installed on your system.
+**Setup:**
 
-Create React App:
+```Create React App:```
 
-1-bash
+- bash
   .npx create-react-app my-react-app --template typescript
   .cd my-react-app
-2-Install Mockoon:
+- Install Mockoon:
   .Download and install Mockoon from the official website based on your operating system.
 
-##Create Mock APIs:
+**Create Mock APIs:**
 
-Launch Mockoon.
-1-Create a new environment (eg, "My Mock APIs").
-2-Under the "Routes" tab, add a new route for your desired API endpoint (eg, /api/products).
-3-Configure the route's method (GET, POST, etc.) and response data.
-3-Start Development Server:
+- Launch Mockoon.
+- Create a new environment (eg, "My Mock APIs").
+- Under the "Routes" tab, add a new route for your desired API endpoint (eg, /api/products).
+- Configure the route's method (GET, POST, etc.) and response data.
+- Start Development Server:
 
-##bash
-1-npm start
+```bash```
+- npm start
 This will start the React development server, usually accessible at http://localhost:3000.
 
-##Project Structure:
+**Project Structure:**
 
-The React project typically follows this structure:
+```The React project typically follows this structure:```
 
-1-src/: Contains the application source code.
-App.tsx: Main application component.
-Other components (optional).
-Additional TypeScript files (types, utilities).
-Mocking API Data:
+- src/: Contains the application source code.
+- App.tsx: Main application component.
+- Other components (optional).
+- And additional TypeScript files (types, utilities).
+- Mocking API Data:
 
 --You can use Mockoon to define your mock API response data. This can be static JSON data or dynamic responses based on your needs.
 
@@ -43,7 +43,7 @@ Mocking API Data:
 
   .Use the fetchAPI or a library like Axios to make requests to your mock API endpoints.
 
-##Example: ProductList Component:
+**Example: ProductList Component:**
 
 The ProductListcomponent demonstrates fetching product data from the mock API and displaying it in a list:
 
@@ -70,7 +70,7 @@ const ProductList: React.FC = () => {
 
   return (
     <div>
-      <h1>Products</h1>
+      
       <ul>
         {products.map(product => 
           <li key={product.id}>{product.name}</li>
@@ -85,4 +85,4 @@ export default ProductList;
 This component defines an interface for Producttype and fetches data from the /api/productsendpoint. The fetched data is then used to populate the product list.
 
 use curl<api link> to call the 
-NB:make shure the CORS are configure correctly on your mockoon to avoid error
+**NB**:make shure the CORS are configure correctly on your mockoon to avoid error
